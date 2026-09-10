@@ -1,0 +1,63 @@
+<section id="servicios" class="section services-section">
+  <div class="container">
+    <header class="services-intro">
+      <div>
+        <p class="section-kicker">Experiencia técnica para decisiones importantes</p>
+        <h2 class="section__title">Servicios especializados</h2>
+      </div>
+      <p class="services-intro__text">
+        Convertimos información contable, financiera y tributaria compleja en conclusiones claras,
+        sustentadas y útiles para su caso.
+      </p>
+    </header>
+
+    <article class="expertise-banner">
+      <div class="expertise-banner__mark" aria-hidden="true">LKC</div>
+      <div>
+        <p class="expertise-banner__eyebrow">Nuestra especialidad</p>
+        <h3>Pericia criminalística aplicada al ámbito contable</h3>
+        <p>Análisis riguroso de documentos, operaciones y evidencias económicas para comprender qué ocurrió y sustentar técnicamente los hallazgos.</p>
+      </div>
+      <a class="btn btn--light" href="#orientacion">Consultar un caso</a>
+    </article>
+
+    <div class="services-grid">
+      @for (service of services; track service.number) {
+        <article class="service-card" [class.service-card--featured]="service.featured">
+          <div class="service-card__top">
+            <span class="service-card__number">{{ service.number }}</span>
+            @if (service.featured) { <span class="service-card__badge">Especialidad principal</span> }
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <ul>
+            @for (item of service.items; track item) { <li>{{ item }}</li> }
+          </ul>
+        </article>
+      }
+    </div>
+
+    <div class="service-reach">
+      <div>
+        <p class="section-kicker">¿A quién podemos ayudar?</p>
+        <h3>Atención especializada en Lima y provincias</h3>
+        <p>Podemos realizar una primera revisión documental a distancia y coordinar la atención presencial cuando la naturaleza del caso lo requiera.</p>
+      </div>
+      <ul class="audience-list">
+        @for (audience of audiences; track audience) { <li>{{ audience }}</li> }
+      </ul>
+    </div>
+
+    <aside id="orientacion" class="service-cta">
+      <div>
+        <p class="section-kicker">Orientación inicial</p>
+        <h3>Cuéntenos brevemente su caso</h3>
+        <p>Revisaremos qué tipo de análisis podría necesitar y qué documentación conviene reunir para una primera conversación.</p>
+      </div>
+      <div class="service-cta__actions">
+        <a class="btn btn--brand" href="https://wa.me/51961510193?text=Hola%2C%20quisiera%20consultar%20sobre%20un%20servicio%20de%20LKC%20Asesores" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        <a class="text-link" href="mailto:conectados@lkcasesoresecontrib.com">Enviar un correo <span aria-hidden="true">→</span></a>
+      </div>
+    </aside>
+  </div>
+</section>

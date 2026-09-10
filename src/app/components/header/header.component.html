@@ -1,0 +1,16 @@
+<header class="header" [class.scrolled]="elevated()">
+  <div class="container header__inner">
+    <a class="brand" href="#hero" aria-label="LKC Asesores - Inicio" (click)="closeMenu()">
+      <img src="img/logo-transparent.png" alt="LKC Asesores Econtrib S.R.L." class="brand__logo" width="2004" height="785" />
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="siteNav" [attr.aria-expanded]="menuOpen()" [attr.aria-label]="menuOpen() ? 'Cerrar menú' : 'Abrir menú'" (click)="toggleMenu()">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="nav" id="siteNav" aria-label="Navegación principal" [class.open]="menuOpen()">
+      <a class="nav__link" href="#quienes-somos" (click)="closeMenu()">¿Quiénes somos?</a>
+      <a class="nav__link" href="#servicios" (click)="closeMenu()">Servicios</a>
+      <a class="nav__link" href="#equipo" (click)="closeMenu()">Nuestro equipo</a>
+      <a class="nav__link" href="#contacto" (click)="closeMenu()">Contacto</a>
+    </nav>
+  </div>
+</header>
