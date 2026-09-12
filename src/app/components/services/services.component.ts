@@ -51,6 +51,4 @@ export class ServicesComponent {
       featured: false,
     },
   ];
-
-  protected readonly audiences = ['Estudios jurídicos y abogados', 'Empresas y organizaciones', 'Personas con una controversia económica', 'Clientes en Lima y provincias'];
 }
