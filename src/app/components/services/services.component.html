@@ -7,7 +7,7 @@
       </div>
       <p class="services-intro__text">
         Convertimos información contable, financiera y tributaria compleja en conclusiones claras,
-        sustentadas y útiles para su caso.
+        sustentadas y útiles para su caso. Seleccione un servicio para conocer su alcance.
       </p>
     </header>
 
@@ -23,17 +23,25 @@
 
     <div class="services-grid">
       @for (service of services; track service.number) {
-        <article class="service-card" [class.service-card--featured]="service.featured">
-          <div class="service-card__top">
+        <details class="service-card" [class.service-card--featured]="service.featured" name="servicios-lkc">
+          <summary>
             <span class="service-card__number">{{ service.number }}</span>
-            @if (service.featured) { <span class="service-card__badge">Especialidad principal</span> }
+            <span class="service-card__heading">
+              <span class="service-card__title">{{ service.title }}</span>
+              @if (service.featured) { <span class="service-card__badge">Especialidad principal</span> }
+            </span>
+            <span class="service-card__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-card__content">
+            <p>{{ service.description }}</p>
+            <div>
+              <p class="service-card__scope">Este servicio puede incluir</p>
+              <ul>
+                @for (item of service.items; track item) { <li>{{ item }}</li> }
+              </ul>
+            </div>
           </div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
-          <ul>
-            @for (item of service.items; track item) { <li>{{ item }}</li> }
-          </ul>
-        </article>
+        </details>
       }
     </div>
 
