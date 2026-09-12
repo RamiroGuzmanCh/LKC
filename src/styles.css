@@ -614,9 +614,7 @@ img {
 .expert-profile__bio { margin: 1.25rem 0; color: #43526a; }
 .expert-profile__areas { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .expert-profile__areas span { padding: 0.4rem 0.65rem; border: 1px solid #dbe6f2; border-radius: 999px; color: #254666; background: #f4f8fc; font-size: 0.78rem; font-weight: 600; }
-.expert-profile__footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: #64748b; font-size: 0.84rem; }
-.expert-profile__footer a { color: var(--brand); font-weight: 700; text-decoration: none; }
-.expert-profile__footer a:hover { text-decoration: underline; }
+.expert-profile__footer { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: #64748b; font-size: 0.84rem; }
 
 /* Consulta */
 .consultation { background: #fff; }
