@@ -11,22 +11,22 @@ export class ServicesComponent {
     {
       number: '01',
       title: 'Pericias penales y civiles',
-      description: 'Elaboración de informes periciales contables para procesos penales y civiles, a partir de los puntos periciales y la documentación disponible.',
-      items: ['Estudio del expediente y puntos periciales', 'Análisis y contrastación documentaria', 'Informe técnico y absolución de observaciones'],
+      description: 'Elaboración de informes periciales contables para procesos penales y civiles, a partir del pedido fiscal, las disposiciones y la documentación disponible.',
+      items: ['Estudio del expediente y/o carpeta fiscal y puntos periciales', 'Análisis y conciliación documentaria', 'Informe técnico y absolución de observaciones', 'Sustento oral de la pericia', 'Debate pericial'],
       featured: true,
     },
     {
       number: '02',
       title: 'Pericias en lavado de activos',
-      description: 'Análisis contable y financiero de operaciones, movimientos de fondos y variaciones patrimoniales relevantes para una investigación.',
-      items: ['Análisis de desbalance patrimonial', 'Trazabilidad de fondos y operaciones', 'Contraste de información bancaria y documental'],
+      description: 'Análisis especializado contable, económico y financiero de operaciones, movimientos de fondos y variaciones patrimoniales relevantes para una investigación, así como de la información obtenida mediante el levantamiento del secreto bancario y de la reserva tributaria y bursátil.',
+      items: ['Análisis del origen y destino de los fondos para determinar y/o descartar un desbalance patrimonial', 'Trazabilidad de fondos y operaciones sustentada mediante el desarrollo de una estructura pericial', 'Contraste de información bancaria, documental, contable y tributaria'],
       featured: false,
     },
     {
       number: '03',
       title: 'Pericias en corrupción de funcionarios',
-      description: 'Revisión técnica de operaciones y documentación vinculadas con el uso de recursos, contrataciones y posibles afectaciones económicas.',
-      items: ['Análisis de contratos, pagos y comprobantes', 'Revisión del uso y destino de recursos', 'Cuantificación de operaciones observadas'],
+      description: 'Análisis y evaluación especializada de las normas de contrataciones aplicadas a las operaciones y documentación vinculadas con el uso de recursos del Estado, así como de las contrataciones y la determinación de posibles afectaciones y/o perjuicios económicos.',
+      items: ['Análisis de contratos, pagos y comprobantes en la etapa de ejecución contractual', 'Revisión del uso y destino de recursos, evaluación presupuestal y ejecución en sus diferentes fases', 'Cuantificación de operaciones observadas vinculadas con la transgresión de las normas'],
       featured: false,
     },
     {
